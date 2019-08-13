@@ -1,6 +1,7 @@
 FROM centos/s2i-core-centos7
 
 USER 0
+RUN mkdir -p /ccs/home/stf007jobvis_auser
 RUN chown -R 15541 /ccs/home/stf007jobvis_auser
 USER 15541
 
