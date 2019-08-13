@@ -1,5 +1,9 @@
 FROM centos/s2i-core-centos7
 
+USER 0
+RUN chown -R 15541 /ccs/home/stf007jobvis_auser
+USER 15541
+
 # Apache HTTP Server image.
 #
 # Volumes:
